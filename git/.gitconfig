@@ -1,0 +1,33 @@
+[diff]
+	color = true
+	tool = vimdiff
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[alias]
+	co = checkout
+        ci = commit
+        st = status
+        stl = "!bash -l -c 'git status $(find_current_maven_project)'"
+        br = branch
+	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+	ll = log --graph --date=relative --pretty=format:"%C(yellow)%h%x09%C(red)%d\\ %C(reset)%s\\ %C(blue)[%cn]\\ %C(reset)%ad" --decorate
+        la = log --graph --date=relative --all --full-history --pretty=format:"%C(yellow)%h%x09%C(red)%d\\ %C(reset)%s\\ %C(blue)[%cn]\\ %C(reset)%ad"
+        type = cat-file -t
+        dump = cat-file -p
+	sl = stash list
+	sa = stash apply
+	dt = difftool
+	d = diff
+
+[user]
+[core]
+	excludesfile = /home/dev/.gitignore_global
+[push]
+	default = simple
+[init]
+[commit]
+[user]
+	name = David Le Bouquin
+	email = david.lebouquin@thalesgroup.com
