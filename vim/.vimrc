@@ -6,6 +6,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'vim-scripts/ReplaceWithRegister'
 Plug 'christoomey/vim-system-copy'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 set t_co=256
