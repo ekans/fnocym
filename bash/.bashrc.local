@@ -1,0 +1,14 @@
+if [ -f /home/dev/dev/.isisrc ]; then
+	. /home/dev/dev/.isisrc
+fi
+
+export PATH=/usr/share/isis/bin:/usr/share/isis/java/bin:/usr/share/isis/maven/bin:${HOME}/tools/eclipse:$PATH
+export LD_LIBRARY_PATH=/usr/share/isis/lib:$LD_LIBRARY_PATH
+export JAVA_HOME=/usr/share/isis/java
+
+### Configuration THALES ####
+export DEV_THA=/media/sf_dev
+
+# QT
+export PATH=/usr/share/isis/qt/bin:$PATH
+export LD_LIBRARY_PATH=/usr/share/isis/qt/lib:$LD_LIBRARY_PATH
