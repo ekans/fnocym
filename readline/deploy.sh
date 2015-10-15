@@ -1,3 +1,3 @@
 #!/bin/bash
 
-ln -s .inputrc ~/.inputrc
+ln -s $(readlink -e .inputrc) ${HOME}/.inputrc

@@ -1,4 +1,4 @@
 #!/bin/bash
 
-ln -s .vimrc ~/.vimrc
-ln -s .vim ~/.vim
+ln -s $(readlink -e .vimrc) ~/.vimrc
+ln -s $(readlink -e .vim) ~/.vim
