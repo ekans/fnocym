@@ -1,6 +1,5 @@
 call plug#begin()
 Plug 'tpope/vim-sensible'
-Plug 'nanotech/jellybeans.vim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'vim-scripts/ReplaceWithRegister'
