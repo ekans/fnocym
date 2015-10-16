@@ -7,7 +7,7 @@
 	branch = auto
 [alias]
 	co = checkout
-        ci = commit
+        ci = commit -m
         st = status
         stl = "!bash -l -c 'git status $(find_current_maven_project)'"
         br = branch
