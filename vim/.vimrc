@@ -6,6 +6,7 @@ Plug 'tpope/vim-commentary'
 Plug 'vim-scripts/ReplaceWithRegister'
 Plug 'christoomey/vim-system-copy'
 Plug 'tpope/vim-fugitive'
+Plug 'altercation/vim-colors-solarized'
 
 if v:version > 702
    Plug 'Shougo/unite.vim'
@@ -38,7 +39,8 @@ if v:version > 702
 else
    set number
 endif
-colorscheme jellybeans
+set background=dark
+colorscheme solarized
 
 noremap <Leader>z <C-Z>
 
