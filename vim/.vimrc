@@ -31,7 +31,7 @@ if has('statusline')
     set statusline+=%=%-14.(%l,%c%V%)\ %p%%  " Right aligned file nav info
 endif
 
-let leadder=','
+let mapleader=','
 set t_co=256
 if v:version > 702
    set relativenumber
