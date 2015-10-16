@@ -1,0 +1,6 @@
+#Vim files
+##########
+.*.sw*
+
+#Vim plugins
+plugged
