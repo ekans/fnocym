@@ -7,6 +7,8 @@ Plug 'christoomey/vim-system-copy'
 Plug 'tpope/vim-fugitive'
 Plug 'altercation/vim-colors-solarized'
 Plug 'tpope/vim-flagship'
+Plug 'tpope/vim-vinegar'
+
 if v:version > 702
    Plug 'Shougo/unite.vim'
 endif
@@ -20,18 +22,6 @@ set laststatus=2
 set showtabline=2
 set guioptions-=e
 
-set t_co=256
-if v:version > 702
-   set relativenumber
-else
-   set number
-endif
-set background=dark
-colorscheme solarized
-
-noremap <Leader>z <C-Z>
-
-let mapleader=','
 set t_co=256
 if v:version > 702
    set relativenumber
