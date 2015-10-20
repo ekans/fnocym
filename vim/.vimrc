@@ -1,4 +1,5 @@
 call plug#begin()
+
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
@@ -8,7 +9,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'altercation/vim-colors-solarized'
 Plug 'tpope/vim-flagship'
 Plug 'tpope/vim-vinegar'
-
+Plug 'sjl/gundo.vim'
 if v:version > 702
    Plug 'Shougo/unite.vim'
 endif
