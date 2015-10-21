@@ -32,6 +32,18 @@ endif
 set background=dark
 colorscheme solarized
 
+" Remap Esc
+inoremap kj <Esc>
+
+" Remap windows navigation
+noremap <c-j> <c-w>j
+noremap <c-k> <c-w>k
+noremap <c-l> <c-w>l
+noremap <c-h> <c-w>h
+
+" External command with !
+nnoremap ! :!
+
 noremap <Leader>z <C-Z>
 noremap <Leader><Leader>e :vsplit ~/.vimrc<CR>
 noremap <Leader><Leader>v :source ~/.vimrc<CR>
