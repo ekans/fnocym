@@ -48,3 +48,4 @@ noremap <Leader>z <C-Z>
 noremap <Leader><Leader>e :vsplit ~/.vimrc<CR>
 noremap <Leader><Leader>v :source ~/.vimrc<CR>
 
+autocmd InsertLeave,TextChanged * :silent update
