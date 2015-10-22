@@ -29,6 +29,18 @@ maven_run () {
    eval mvn $@
    echo mvn $@
 }
+vim_run () {
+    vim_pid=`pgrep vim`   
+    echo $vim_run
+    if [[ ! -z "$vim_pid" ]]
+    then
+        job_number=$( jobs vim | grep -Po '^\[\K[0-9]*' )
+        echo $job_number
+        fg $job_number
+    else
+        vim $@
+    fi
+}
 
 find_current_maven_project() {
    path=.
