@@ -32,6 +32,9 @@ endif
 set background=dark
 colorscheme solarized
 
+" Autohide buffers when they are modified
+set hidden
+
 " Remap Esc
 inoremap kj <Esc>
 
