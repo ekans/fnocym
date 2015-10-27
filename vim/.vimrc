@@ -11,6 +11,7 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'tpope/vim-flagship'
 Plug 'tpope/vim-vinegar'
 Plug 'sjl/gundo.vim'
+Plug 'davidhalter/jedi-vim'
 if v:version > 702
    Plug 'Shougo/unite.vim'
 endif
