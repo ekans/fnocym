@@ -24,15 +24,17 @@ set showtabline=2
 set guioptions-=e
 
 set t_co=256
+set background=dark
+colorscheme solarized
+
 if v:version > 702
    set relativenumber
 else
    set number
 endif
-set background=dark
-colorscheme solarized
 
-" Autohide buffers when they are modified
+" Autohide buffers when they are modified i.e. do not avoid to move to another
+" buffer if the current buffer is modified
 set hidden
 
 " Remap Esc
