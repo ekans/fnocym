@@ -48,11 +48,17 @@ set smartcase
 " Remap Esc
 inoremap kj <Esc>
 
+" Move on display lines
+nnoremap j gj
+nnoremap k gk
+xnoremap j gj
+xnoremap k gk
+
 " Remap windows navigation
-noremap <c-j> <c-w>j
-noremap <c-k> <c-w>k
-noremap <c-l> <c-w>l
-noremap <c-h> <c-w>h
+nmap gh <C-w>h
+nmap gj <C-w>j
+nmap gk <C-w>k
+nmap gl <C-w>l
 
 " External command with !
 nnoremap ! :!
