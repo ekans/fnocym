@@ -48,7 +48,11 @@ noremap <c-h> <c-w>h
 nnoremap ! :!
 
 noremap <Leader>z <C-Z>
-noremap <Leader><Leader>e :vsplit ~/.vimrc<CR>
-noremap <Leader><Leader>v :source ~/.vimrc<CR>
 
+" vimrc editing stuff
+noremap <Leader><Leader>v :vsplit $MYVIMRC<CR>
+augroup reload_vimrc " {
+    autocmd!
+    autocmd BufWritePost $MYVIMRC source $MYVIMRC
+augroup END " }
 autocmd InsertLeave,TextChanged * :silent update
