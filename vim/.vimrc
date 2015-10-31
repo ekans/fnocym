@@ -51,6 +51,13 @@ noremap <c-h> <c-w>h
 
 " External command with !
 nnoremap ! :!
+" Command line mapping
+cnoremap kj <C-C>
+cnoremap <C-a> <Home>
+cnoremap <C-f> <Right>
+cnoremap <C-b> <Left>
+cnoremap <M-b> <C-Left>
+cnoremap <M-f> <C-Right>
 
 noremap <Leader>z <C-Z>
 
