@@ -50,13 +50,6 @@ set smartcase
 inoremap kj <Esc>
 
 set scrolloff=10
-
-" Move on display lines
-nnoremap j gj
-nnoremap k gk
-xnoremap j gj
-xnoremap k gk
-
 " Remap windows navigation
 nmap gh <C-w>h
 nmap gj <C-w>j
