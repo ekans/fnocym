@@ -15,6 +15,7 @@ Plug 'tpope/vim-vinegar'
 Plug 'sjl/gundo.vim'
 Plug 'davidhalter/jedi-vim'
 Plug 'Shougo/unite.vim'
+Plug 'SirVer/ultisnips'
 
 call plug#end()
 
