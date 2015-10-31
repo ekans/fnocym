@@ -16,6 +16,7 @@ Plug 'sjl/gundo.vim'
 Plug 'davidhalter/jedi-vim'
 Plug 'Shougo/unite.vim'
 Plug 'Shougo/neomru.vim'
+Plug 'Shougo/neoyank.vim'
 Plug 'SirVer/ultisnips'
 
 call plug#end()
@@ -82,6 +83,7 @@ augroup END " }
 
 " Unite mapping
 let g:unite_source_history_yank_enable = 1
+let g:unite_source_history_yank_save_clipboard = 1
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
 nnoremap <leader>f :<C-u>Unite -no-split -buffer-name=files   -start-insert file_rec/async:!<cr>
 nnoremap <leader>r :<C-u>Unite -no-split -buffer-name=mru     -start-insert file_mru<cr>
