@@ -49,6 +49,8 @@ set smartcase
 " Remap Esc
 inoremap kj <Esc>
 
+set scrolloff=10
+
 " Move on display lines
 nnoremap j gj
 nnoremap k gk
