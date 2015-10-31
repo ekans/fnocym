@@ -40,6 +40,10 @@ endif
 " buffer if the current buffer is modified
 set hidden
 
+" Search options
+set ignorecase
+set smartcase
+
 " Remap Esc
 inoremap kj <Esc>
 
