@@ -60,6 +60,7 @@ cnoremap kj <C-C>
 cnoremap <C-a> <Home>
 cnoremap <C-f> <Right>
 cnoremap <C-b> <Left>
+cnoremap <C-d>  <Delete>
 cnoremap <M-b> <C-Left>
 cnoremap <M-f> <C-Right>
 
