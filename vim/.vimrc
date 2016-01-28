@@ -18,6 +18,8 @@ Plug 'Shougo/unite.vim'
 Plug 'Shougo/neomru.vim'
 Plug 'Shougo/neoyank.vim'
 Plug 'SirVer/ultisnips'
+Plug 'artur-shaik/vim-javacomplete2'
+Plug 'scrooloose/syntastic'
 
 call plug#end()
 
@@ -32,11 +34,7 @@ set t_co=256
 set background=dark
 colorscheme solarized
 
-if v:version > 702
-   set relativenumber
-else
-   set number
-endif
+set relativenumber
 
 " Autohide buffers when they are modified i.e. do not avoid to move to another
 " buffer if the current buffer is modified
@@ -76,6 +74,14 @@ augroup reload_vimrc " {
     autocmd BufWritePost $MYVIMRC source $MYVIMRC
 augroup END " }
 
+" Clean file on save
+augroup clean_file " {
+    " e flag to not issue an error when the search failed
+    autocmd!
+    autocmd BufWritePre * :%s/\s\+$//e
+    autocmd BufWritePre * :%s/\t/    /ge
+augroup END " }
+
 " Unite mapping
 let g:unite_source_history_yank_enable = 1
 let g:unite_source_history_yank_save_clipboard = 1
@@ -89,10 +95,16 @@ nnoremap <leader>y :<C-u>Unite -no-split -buffer-name=yank    history/yank<cr>
 " Custom mappings for the unite buffer
 autocmd FileType unite call s:unite_settings()
 function! s:unite_settings()
-  " Play nice with supertab
-  let b:SuperTabDisabled=1
   " Enable navigation with control-j and control-k in insert mode
   imap <buffer> <C-j>   <Plug>(unite_select_next_line)
   imap <buffer> <C-k>   <Plug>(unite_select_previous_line)
 endfunction
 
+
+" Java settings
+augroup java_file
+    autocmd!
+    autocmd FileType java set omnifunc=javacomplete#Complete
+    autocmd FileType java set makeprg=mvn\ compile\ -q
+    autocmd FileType java set errorformat=\[ERROR]\ %f:[%l\\,%v]\ %m
+augroup END
