@@ -9,7 +9,6 @@ Plug 'tpope/vim-commentary'
 Plug 'vim-scripts/ReplaceWithRegister'
 Plug 'christoomey/vim-system-copy'
 Plug 'tpope/vim-fugitive'
-Plug 'altercation/vim-colors-solarized'
 Plug 'tpope/vim-flagship'
 Plug 'tpope/vim-vinegar'
 Plug 'sjl/gundo.vim'
@@ -20,6 +19,7 @@ Plug 'Shougo/neoyank.vim'
 Plug 'SirVer/ultisnips'
 Plug 'artur-shaik/vim-javacomplete2'
 Plug 'scrooloose/syntastic'
+Plug 'blueshirts/darcula'
 
 call plug#end()
 
@@ -32,7 +32,7 @@ set guioptions-=e
 
 set t_co=256
 set background=dark
-colorscheme solarized
+colorscheme darcula
 
 set relativenumber
 

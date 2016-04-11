@@ -7,15 +7,14 @@
     branch = auto
 [alias]
     co = checkout
-        ci = commit
-        st = status
-        stl = "!bash -l -c 'git status $(find_current_maven_project)'"
-        br = branch
+    ci = commit
+    st = status
+    br = branch
     hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
     ll = log --graph --date=relative --pretty=format:"%C(yellow)%h%x09%C(red)%d\\ %C(reset)%s\\ %C(blue)[%cn]\\ %C(reset)%ad" --decorate
-        la = log --graph --date=relative --all --full-history --pretty=format:"%C(yellow)%h%x09%C(red)%d\\ %C(reset)%s\\ %C(blue)[%cn]\\ %C(reset)%ad"
-        type = cat-file -t
-        dump = cat-file -p
+    la = log --graph --date=relative --all --full-history --pretty=format:"%C(yellow)%h%x09%C(red)%d\\ %C(reset)%s\\ %C(blue)[%cn]\\ %C(reset)%ad"
+    type = cat-file -t
+    dump = cat-file -p
     sl = stash list
     sa = stash apply
     dt = difftool
@@ -29,15 +28,14 @@
 [init]
 [commit]
 [user]
-    name = ghekans@gmail.com
-    email = david.lebouquin@thalesgroup.com
-    mail = ghekans@gmail.com
+    name = ekans
+    email = ghekans@gmail.com
 [credential]
     helper = cache
 [mergetool]
-	prompt = false
+    prompt = false
 [merge]
-	conflictstyle = diff3
-	tool = vimdiff
+    conflictstyle = diff3
+    tool = vimdiff
 [rerere]
-	enabled = true
+    enabled = true

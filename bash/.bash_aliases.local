@@ -1,3 +1,0 @@
-alias vmdev='ssh vmdev'
-alias rvmdev='ssh rvmdev'
-alias scp='scp -F /home/lebouquin/.ssh/config'
