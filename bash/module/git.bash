@@ -5,7 +5,7 @@ then
 fi
 
 # Retrieve root directory of conf
-rootDir=$(readlink -f .bash_profile)
+rootDir=$(readlink -f ~/.bash_profile)
 
 if [[ -f $(dirname $rootDir)/module/externals/bash-git-prompt/gitprompt.sh ]]
 then
