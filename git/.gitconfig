@@ -11,6 +11,7 @@
     st = status
     br = branch
     hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+    lc = log --stat -C -5 --graph --date=relative --pretty=format:"%C(yellow)%h%x09%C(red)%d\\ %C(reset)%s\\ %C(blue)[%cn]\\ %C(reset)%ad" --decorate
     ll = log --graph --date=relative --pretty=format:"%C(yellow)%h%x09%C(red)%d\\ %C(reset)%s\\ %C(blue)[%cn]\\ %C(reset)%ad" --decorate
     la = log --graph --date=relative --all --full-history --pretty=format:"%C(yellow)%h%x09%C(red)%d\\ %C(reset)%s\\ %C(blue)[%cn]\\ %C(reset)%ad"
     type = cat-file -t
@@ -19,6 +20,9 @@
     sa = stash apply
     dt = difftool
     d = diff
+    dw = diff --word-diff
+    graphviz = "!f() { echo 'digraph git {' ; git log --pretty='format: %h -> { %p }' \"$@\" | sed 's/[0-9a-f][0-9a-f]*/\"&\"/g' ; echo '}'; }; f"
+    ai = add -i
 
 [user]
 [core]
@@ -28,7 +32,7 @@
 [init]
 [commit]
 [user]
-    name = ekans
+    name = Ekans
     email = ghekans@gmail.com
 [credential]
     helper = cache
