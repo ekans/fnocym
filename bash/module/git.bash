@@ -18,4 +18,6 @@ fi
 
 alias g='\git'
 # Map alias to git completion
-complete -F _git g
+# source: https://brbsix.github.io/2015/11/22/perform-tab-completion-for-aliases-in-bash/
+_completion_loader git
+complete -o bashdefault -o default -o nospace -F _git g
