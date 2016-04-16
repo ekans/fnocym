@@ -20,6 +20,7 @@ Plug 'SirVer/ultisnips'
 Plug 'artur-shaik/vim-javacomplete2'
 Plug 'scrooloose/syntastic'
 Plug 'blueshirts/darcula'
+Plug 'fatih/vim-go'
 
 call plug#end()
 
