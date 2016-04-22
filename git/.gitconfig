@@ -3,7 +3,7 @@
     tool = vimdiff
 [color]
     diff = auto
-    status = auto
+    status = always
     branch = auto
 [alias]
     co = checkout
